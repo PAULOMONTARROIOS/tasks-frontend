@@ -9,12 +9,12 @@
 <body class="bg-light">
 	<div class="container w-75">
 		<div class="py-5 text-center">
-			<h1>Tasks!!!</h1>
+			<h1>Tasks!!</h1>
 			<p class="lead">A very simple task management tool for daily uses</p>
 		</div>
 		<p class="alert alert-success" role="alert" th:if="${sucess != null}" th:text="${sucess}" id="message" />
 		<div th:switch="${todos.size()}">
-    		<h2 th:case="0">No tasks... enjoy your day!</h2>
+    		<h2 th:case="0">Awesome!! No tasks... enjoy your day!</h2>
         	<div th:case="*">
 				<table id="todoTable" class="table table-hover">
 					<thead class="thead-dark">
